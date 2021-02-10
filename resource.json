@@ -1,0 +1,314 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为网页资源信息",
+        " *   success字段为下载保存成功的资源;failures字段则为下载保存失败的资源URL",
+        " *   success字段为标准树结构，每一层资源父子关系、URL和保存路径清晰明了",
+        " *   本文件仅为记录检测到的网页资源以便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "success": [
+        {
+            "url": "https://www.moulem.com/j.html",
+            "path": "index.html",
+            "children": [
+                {
+                    "url": "https://www.moulem.com/images/searchBtn.png",
+                    "path": "images/searchBtn.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/buy.png",
+                    "path": "images/buy.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/news.png",
+                    "path": "images/news.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/forum.png",
+                    "path": "images/forum.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tool.png",
+                    "path": "images/tool.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/favorites.png",
+                    "path": "images/favorites.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tmall.png",
+                    "path": "images/tmall.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/jingdong.png",
+                    "path": "images/jingdong.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/taobao.png",
+                    "path": "images/taobao.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/suning.png",
+                    "path": "images/suning.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/weipinhui.png",
+                    "path": "images/weipinhui.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/amazon.png",
+                    "path": "images/amazon.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/dangdang.png",
+                    "path": "images/dangdang.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/mogujie.png",
+                    "path": "images/mogujie.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tencentNews.png",
+                    "path": "images/tencentNews.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/fenghuang.png",
+                    "path": "images/fenghuang.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/souhu.png",
+                    "path": "images/souhu.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/wangyi.png",
+                    "path": "images/wangyi.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/pengpai.png",
+                    "path": "images/pengpai.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/xinlang.png",
+                    "path": "images/xinlang.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/huanqiu.png",
+                    "path": "images/huanqiu.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/guoke.png",
+                    "path": "images/guoke.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/weibo.png",
+                    "path": "images/weibo.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tencentWeibo.png",
+                    "path": "images/tencentWeibo.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/weixin.png",
+                    "path": "images/weixin.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tieba.png",
+                    "path": "images/tieba.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/douban.png",
+                    "path": "images/douban.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tianya.png",
+                    "path": "images/tianya.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/zcool.png",
+                    "path": "images/zcool.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/zhihu.png",
+                    "path": "images/zhihu.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tianqi.png",
+                    "path": "images/tianqi.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/rili.png",
+                    "path": "images/rili.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/jisuanqi.png",
+                    "path": "images/jisuanqi.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/baidufanyi.png",
+                    "path": "images/baidufanyi.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/google.png",
+                    "path": "images/google.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/baiduMap.png",
+                    "path": "images/baiduMap.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/kuaidi100.png",
+                    "path": "images/kuaidi100.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/huochepiao.png",
+                    "path": "images/huochepiao.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/tencentVideo.png",
+                    "path": "images/tencentVideo.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/iqiyi.png",
+                    "path": "images/iqiyi.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/mangguo.png",
+                    "path": "images/mangguo.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/douyu.png",
+                    "path": "images/douyu.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/duowan.png",
+                    "path": "images/duowan.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/bilibili.png",
+                    "path": "images/bilibili.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/qqmail.png",
+                    "path": "images/qqmail.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/jianyue/yunyinyue.png",
+                    "path": "images/yunyinyue.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/searchChoice/scbaidu.png",
+                    "path": "images/scbaidu.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/searchChoice/scsougou.png",
+                    "path": "images/scsougou.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/searchChoice/scbing.png",
+                    "path": "images/scbing.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/searchChoice/sc360.png",
+                    "path": "images/sc360.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/searchChoice/scgoogle.png",
+                    "path": "images/scgoogle.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/searchChoice/sccili.png",
+                    "path": "images/sccili.png"
+                },
+                {
+                    "url": "https://www.moulem.com/images/searchChoice/scyingyin.png",
+                    "path": "images/scyingyin.png"
+                },
+                {
+                    "url": "https://www.moulem.com/jquery-1.8.0.js",
+                    "path": "js/jquery-1.8.0.js"
+                },
+                {
+                    "url": "https://www.moulem.com/keyword.js?version=0518.19",
+                    "path": "js/keyword.js"
+                },
+                {
+                    "url": "https://www.moulem.com/moulem.js?version=18.13",
+                    "path": "js/moulem.js"
+                },
+                {
+                    "url": "https://www.moulem.com/moulem.css?version=0518.19",
+                    "path": "css/moulem.css",
+                    "children": [
+                        {
+                            "url": "https://www.moulem.com/images/bg.png",
+                            "path": "images/bg.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/logoLeft.png",
+                            "path": "images/logoLeft.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/logoRight.png",
+                            "path": "images/logoRight.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/recoPage.png",
+                            "path": "images/recoPage.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/recoPageBtn.png",
+                            "path": "images/recoPageBtn.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/logo25px.png",
+                            "path": "images/logo25px.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/voosoom.png",
+                            "path": "images/voosoom.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/hNavGrayLine.png?version=18.13",
+                            "path": "images/hNavGrayLine.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/hSiteBg.png?version=18.8",
+                            "path": "images/hSiteBg.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/hSiteImg1.png",
+                            "path": "images/hSiteImg1.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/hSiteImg2.png",
+                            "path": "images/hSiteImg2.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/hSiteImg3.png",
+                            "path": "images/hSiteImg3.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/hSiteImgNeets.png",
+                            "path": "images/hSiteImgNeets.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/hSiteImgHaiduomi.png",
+                            "path": "images/hSiteImgHaiduomi.png"
+                        },
+                        {
+                            "url": "https://www.moulem.com/images/searchChoice/prompt.png",
+                            "path": "images/prompt.png"
+                        }
+                    ]
+                },
+                {
+                    "url": "https://www.moulem.com/images/logoLeft01.png",
+                    "path": "images/logoLeft01.png"
+                }
+            ]
+        }
+    ],
+    "failures": []
+}

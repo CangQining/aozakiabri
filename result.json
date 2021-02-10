@@ -1,0 +1,53 @@
+{
+    "header": [
+        " *   ",
+        " *   文件描述：本文件为请求参数，包括不限于网址、请求头、响应头、COOKIE、Referer、UserAgent",
+        " *   本文件仅为记录详细请求参数便于调试，非专业人员可将本文件删除",
+        " *   详细介绍请参考: https://bazhan.me/faq",
+        " *   "
+    ],
+    "directory": "www-moulem-com-ojqj23iq",
+    "options": {
+        "url": "https://www.moulem.com/j.html",
+        "index": "index.html",
+        "domain": "www.moulem.com",
+        "origin": "https://www.moulem.com",
+        "ipaddress": "115.28.138.143",
+        "originURL": "https://www.moulem.com/j.html",
+        "filenameGenerator": "byType",
+        "request": {
+            "headers": {
+                "accept": "text/html,*/*",
+                "accept-language": "zh-CN,zh;q=0.9",
+                "accept-encoding": "gzip",
+                "cache-control": "no-cache",
+                "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
+                "x-scraper-website": "https://bazhan.me/"
+            }
+        },
+        "response": {
+            "statusCode": 200,
+            "headers": {
+                "date": "Sat, 06 Feb 2021 09:11:56 GMT",
+                "server": "Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.2.24",
+                "last-modified": "Sat, 18 Jan 2020 15:07:00 GMT",
+                "etag": "\"3efd-59c6b6900d7cd\"",
+                "accept-ranges": "bytes",
+                "content-length": "16125",
+                "connection": "close",
+                "content-type": "text/html; charset=UTF-8"
+            }
+        }
+    },
+    "user": {
+        "isWhite": false
+    },
+    "formatter": [
+        "saveOriginal"
+    ],
+    "time": {
+        "start": 1612602716053,
+        "end": 1612602732130,
+        "spend": "16.077s"
+    }
+}

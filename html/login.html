@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>h5高端登录界面模板源码 - </title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<link rel="stylesheet" media="screen" href="css/dmaku.main.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<script>
+		function ch() {
+			var k = $("input[name='key']").val();
+			if(k=="TF"){
+				window.location.replace("index.html");
+			}else {
+				window.location.replace("login.html");
+			}
+
+		}
+	</script>
+	<meta name="referrer" content="origin">
+</head>
+<!--/************************************************************
+ *																*
+ * 						      							*
+ *                        								*
+ *       		  努力创建完善、持续更新插件以及模板			*
+ * 																*
+**************************************************************-->
+<body>
+
+	<div class="wrapper">
+		<div class="top_wrapper">
+			<div class="container">
+				<div class="col-sm-12 header"><img src="images/login_logo.png" width="140" height="37" class="retina" /></div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 login_content_wrapper">
+					<div class="content_wrapper">
+						<div id="messages" class="alert alert-danger"><p>无效的电子邮件或密码.</p></div>
+						<h1 class="title">登录到您的帐户</h1>
+						<form class="new_user_session" id="new_user_session" action="#" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LRPFYc5H4DbwRFnREEZDHBjUgUO16rwDKxkGlB1b4nUr3A57ndoPZ55ODZ4dTERZ5vlxPvcSYjGRysTZqb78pw==" />
+
+							<div class="form-group">
+								<label for="key">key</label>
+								<input autocomplete="off" class="form-control" type="text" name="key" id="key" />
+							</div>
+							<div class="form-group">
+								<div class="row">
+									<div class="col-sm-6">
+										<input name="user[remember_me]" type="hidden" value="0" /><input id="user_session_remember_me" type="checkbox" value="1" name="user[remember_me]" />
+										<label for="user_session_remember_me" style="font-size:13px;font-weight:normal;">记住帐号</label>
+									</div>
+									<div class="col-xs-12 col-sm-6 text-right">
+										<input class="btn btn-default btn-success" value="登 入" type="button" onclick="ch()" />
+									</div>
+								</div>
+							</div>
+							<div class="from-group">
+								<div class="row forgot_password">
+									<div class="col-sm-12">
+										<a href="">忘记密码?</a><a style="float:right;" href="">注册新帐号</a>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+					<p class="copyright">&copy; 2020 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -60,7 +60,7 @@
 			notice: function(){
 				let va = "";
 				$.ajax({
-					url:'https://49.232.169.247:8080/drrr/sessionlist',
+					url:'http://49.232.169.247/drrr/sessionlist',
 					success:function(msg){
 						va=msg;
 					},
@@ -96,7 +96,7 @@
 
 				if(text==="启动robot"){
 					$.ajax({
-						url:'https://49.232.169.247:8080/drrr/oneStep',
+						url:'http://49.232.169.247/drrr/oneStep',
 						success:function(msg){
 							if(msg.code!==500) {
 								text = '启动成功';
@@ -109,7 +109,7 @@
 				}
 				if(text==="停止"){
 					$.ajax({
-						url:'https://49.232.169.247:8080/drrr/stopAll',
+						url:'http://49.232.169.247/drrr/stopAll',
 						success:function(msg){
 							text=msg;
 						},

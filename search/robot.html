@@ -40,6 +40,8 @@
 	<button type="button" data-method="offset" data-type="auto" class="layui-btn layui-btn-normal">启动robot</button>
 	<button type="button" data-method="notice" class="layui-btn layui-btn-normal">查看cookie</button>
 	<button type="button" data-method="offset" data-type="auto" class="layui-btn layui-btn-normal">停止</button>
+	<button type="button" data-method="offset" data-type="auto" class="layui-btn layui-btn-normal">开启welcome</button>
+	<button type="button" data-method="offset" data-type="auto" class="layui-btn layui-btn-normal">关闭welcome</button>
 	</div>
 </fieldset>
 <script src="layui.js" charset="utf-8"></script>
@@ -112,6 +114,24 @@
 						url:'http://49.232.169.247/drrr/stopAll',
 						success:function(msg){
 							text=msg;
+						},
+						async:false
+					});
+				}
+				if(text==="开启welcome"){
+					$.ajax({
+						url:'http://49.232.169.247/drrr/welcomeStatus?status=true',
+						success:function(msg){
+							text=msg.message;
+						},
+						async:false
+					});
+				}
+				if(text==="关闭welcome"){
+					$.ajax({
+						url:'http://49.232.169.247/drrr/welcomeStatus?status=false',
+						success:function(msg){
+							text=msg.message;
 						},
 						async:false
 					});

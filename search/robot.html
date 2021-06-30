@@ -155,6 +155,8 @@
                         alert("填写下面的名字和头像后再点击");
                         return;
                     }
+                    alert("这个功能有bug先不要点！");
+                    return ;
                     $.ajax({
                         url: 'http://49.232.169.247/drrr/goToTF?var1=' + user + '&var2=' + pwd + '&var3=',
                         success: function (msg) {

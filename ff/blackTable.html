@@ -45,6 +45,13 @@
             <input type="text" name="username" lay-verify="required" placeholder="这里是姓名" autocomplete="off" class="layui-input">
         </div>
     </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">副本</label>
+        <div class="layui-input-inline">
+            <input type="text" name="maze"  placeholder="这里是副本" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+
 
     <div class="layui-form-item">
         <div class="layui-inline">
@@ -59,7 +66,7 @@
         <label class="layui-form-label">区服</label>
 
         <div class="layui-input-inline">
-            <select name="quiz2">
+            <select name="quiz2" id="quiz2">
                 <option value="0">大区</option>
                 <option value="1" disabled>鸟区</option>
                 <option value="2">猪区</option>
@@ -75,11 +82,10 @@
             </select>
         </div>
     </div>
-
     <div class="layui-form-item layui-form-text">
         <label class="layui-form-label">备注</label>
         <div class="layui-input-block">
-            <textarea placeholder="请输入内容" class="layui-textarea"></textarea>
+            <textarea placeholder="请输入内容" name="remark" class="layui-textarea"></textarea>
         </div>
     </div>
     <div class="layui-form-item">
@@ -91,10 +97,9 @@
 <!-- 注意：如果你直接复制所有代码到本地，上述 JS 路径需要改成你本地的 -->
 <script>
     layui.use(['form', 'layedit', 'laydate'], function(){
-        var form = layui.form
-            ,layer = layui.layer
-            ,layedit = layui.layedit
-            ,laydate = layui.laydate;
+        const form = layui.form
+            , layer = layui.layer
+            , laydate = layui.laydate;
 
         //日期
         laydate.render({
@@ -103,50 +108,32 @@
         laydate.render({
             elem: '#date1'
         });
-
-        //创建一个编辑器
-        var editIndex = layedit.build('LAY_demo_editor');
-
-        //自定义验证规则
-        form.verify({
-            title: function(value){
-                if(value.length < 5){
-                    return '标题至少得5个字符啊';
-                }
-            }
-            ,pass: [
-                /^[\S]{6,12}$/
-                ,'密码必须6到12位，且不能出现空格'
-            ]
-            ,content: function(value){
-                layedit.sync(editIndex);
-            }
+        //初始化
+        layer.ready(function(){
+            layer.msg('还没写完！');
         });
-
-        //监听指定开关
-        form.on('switch(switchTest)', function(data){
-            layer.msg('开关checked：'+ (this.checked ? 'true' : 'false'), {
-                offset: '6px'
-            });
-            layer.tips('温馨提示：请注意开关状态的文字可以随意定义，而不仅仅是ON|OFF', data.othis)
-        });
+        $.ajax({
+            url: 'department_json.php',
+            dataType: 'json',
+            type: 'get',
+            success: function (data) {
+                console.log(data);//下面会提到这个data是什么值
+                //使用循环遍历，给下拉列表赋值
+                $.each(data.data, function (index, value) {
+                    // console.log(value.department_id);
+                    $("#quiz2").append(new Option(value.department_name,value.department_id));// 下拉菜单里添加元素
+                });
+                layui.form.render("select");//重新渲染 固定写法
+            }
+        })
 
         //监听提交
-        form.on('submit(demo1)', function(data){
+        form.on('submit(demo2)', function(data){
             layer.alert(JSON.stringify(data.field), {
                 title: '最终的提交信息'
             })
             return false;
         });
-
-
-
-        //表单取值
-        layui.$('#LAY-component-form-getval').on('click', function(){
-            var data = form.val('example');
-            alert(JSON.stringify(data));
-        });
-
     });
 </script>
 <script>
@@ -162,22 +149,16 @@
                 ,layEvent: 'LAYTABLE_TIPS'
                 ,icon: 'layui-icon-tips'
             }]
-            ,title: '用户数据表'
+            ,title: '黑名单'
             ,cols: [[
                 {type: 'checkbox', fixed: 'left'}
                 ,{field:'id', title:'ID', width:80, fixed: 'left', unresize: true, sort: true}
                 ,{field:'username', title:'用户名', width:120, edit: 'text'}
-                ,{field:'email', title:'邮箱', width:150, edit: 'text', templet: function(res){
-                        return '<em>'+ res.email +'</em>'
-                    }}
-                ,{field:'sex', title:'性别', width:80, edit: 'text', sort: true}
-                ,{field:'city', title:'城市', width:100}
-                ,{field:'sign', title:'签名'}
-                ,{field:'experience', title:'积分', width:80, sort: true}
-                ,{field:'ip', title:'IP', width:120}
-                ,{field:'logins', title:'登入次数', width:100, sort: true}
+                ,{field:'logins', title:'区服', width:100, sort: true}
+                ,{field:'logins', title:'服务器', width:100, sort: true}
+                ,{field:'logins', title:'副本名', width:100, sort: true}
                 ,{field:'joinTime', title:'加入时间', width:120}
-                ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
+                ,{field:'joinTime', title:'备注'}
             ]]
             ,page: true
         });
